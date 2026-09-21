@@ -16,12 +16,12 @@ background-color: white;
 padding: 20px;
 margin: 15px auto;
 max-width: 600px;
-border: 1px solid #c8ddc8;
+border: 1px solid #eac8dc;
 border-radius: 10px;
 }
 
 h2 {
-color: #2e7d32;
+color: #5edcef;
 }
 
 input {
@@ -34,11 +34,43 @@ border-radius: 5px;
 button {
 padding: 8px 15px;
 margin-top: 5px;
-background-color: #2e7d32;
+background-color: #1cc1eb;
 color: white;
 border: none;
 border-radius: 5px;
 }
+
+#output1 {
+margin-top: 10px;
+}
+
+.info {
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Seatwork 1 / Drill 2</h1>
+
+
+<div id="output"class="box">
+<h2>Student Information</h2>
+
+<py-script type="py" src="main.py"></py-script>
+</div>
+
+<div class="box">
+<h2>Calculator</h2>
+
+<input type="text" id="input1" placeholder="Enter a number"><br>
+<input type="text" id="input2" placeholder="Enter a number"><br>
+
+<button type="submit" py-click="adding_numbers">Solve</button>
+
+<div id="output1"></div>
+</div>
+
 
 </body>
 </html>
